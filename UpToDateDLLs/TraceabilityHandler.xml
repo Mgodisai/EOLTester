@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TraceabilityHandler</name>
+    </assembly>
+    <members>
+        <member name="P:TraceabilityHandler.API.BaseUrl">
+            <summary>
+            Traceability elérési út
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.API.LogRequest">
+            <summary>
+            Kell-e logolás (pl. hibakeresés miatt)
+            </summary>
+        </member>
+        <member name="M:TraceabilityHandler.API.GetProductState(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Termék állapotának lekérdezése
+            </summary>
+            <param name="productID">A termék egyedi azonosítója.</param>
+            <param name="operationTypeID">Művelet típus kódja</param>
+            <param name="productTypeID">Termék típus</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.AddOperationResult(TraceabilityHandler.OperationDetails)">
+            <summary>
+            Művelet rögzítése
+            </summary>
+            <param name="OperationDetails">Művelet adatai</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.Login(TraceabilityHandler.UserLogin)">
+            <summary>
+            Felhasználói autentikáció
+            </summary>
+            <param name="Login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.GetOperations(System.Int32)">
+            <summary>
+            A megadott terméktípus műveleteinek lekérdezése
+            </summary>
+            <param name="productTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.GetProductTypes">
+            <summary>
+            Termékítpusok lekérdezése
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.SetMilestoneByManually(System.String,System.String,System.String)">
+            <summary>
+            Mérföldkő beállítása manuálisan
+            </summary>
+            <param name="productID">Termék azonosító</param>
+            <param name="milestoneID">Mérföldkő azonosító</param>
+            <param name="milestoneValue">Új érték</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.GetSerialID(System.String)">
+            <summary>
+            Szériaszám lekérése
+            </summary>
+            <param name="productID">Termék azonosító</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.ReceiveParts(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Doboz bevételezés
+            </summary>
+            <param name="partNumber">Akatrész kód</param>
+            <param name="boxNumber">Doboz szám</param>
+            <param name="lotCode">Batch kód</param>
+            <param name="quantity">Mennyiség</param>
+            <param name="locationCode">Lokáció kód</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.ProductAssembly(System.String,System.Boolean,System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            Termékek egymásba építése
+            </summary>
+            <param name="sourceProductID">Beépítendő termék azonosítója</param>
+            <param name="is_spid">true, ha a beépítendő termék ProductID-jét adtuk meg, false ha a szériaszámát</param>
+            <param name="destanationProductID">A szerelvény azonosítója</param>
+            <param name="is_dpid">true, ha a szerelvény ProductID-jét adtuk meg, false ha a szériaszámát</param>
+            <param name="operationTypeName">A művelet neve</param>
+            <param name="userID">Felhasználó azonosító</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.ProductPullOut(System.String,System.Boolean,System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <xyz>rrrr</xyz>xyz>
+            <param name="sourceProductID"></param>
+            <param name="is_spid"></param>
+            <param name="destanationProductID"></param>
+            <param name="is_dpid"></param>
+            <param name="operationTypeName"></param>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.API.GetProductOperationDetail(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Termék állapotának lekérdezése
+            </summary>
+            <param name="productID">A termék egyedi azonosítója.</param>
+            <param name="operationTypeID">Művelet típus kódja</param>
+            <param name="productTypeID">Termék típus</param>
+            <returns></returns>
+        </member>
+        <member name="M:TraceabilityHandler.Logger.WriteExceptionLog(System.String,System.String)">
+            <summary>
+            Kivételek logolására
+            </summary>
+            <param name="message">Hibaüzenet</param>
+            <param name="code">Hibakód, egyedi legyen</param>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetail.ParameterItemID">
+            <summary>
+            Egy művelettípushoz tartozó paraméter sorszáma.
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetail.Passed">
+            <summary>
+            Ha sikeres volt a művelet 1, különben 0
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetail.Value">
+            <summary>
+            Érték
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetail.TextValue">
+            <summary>
+            Hosszú, szöveges érték
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.UserID">
+            <summary>
+            Bejelentkezett user azonosítója
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.OperationID">
+            <summary>
+            Művelettípus
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.ProductID">
+            <summary>
+            Termék azonosító
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.Judgement">
+            <summary>
+            A művelet eredménye. 0 ha sikeres, pozitív ha sikertelen, negatívont csak a rework vihet fel.
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.ParamVersion">
+            <summary>
+            Paraméter verzió
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.PropertyVersionID">
+            <summary>
+            Termék property verzió
+            </summary>
+        </member>
+        <member name="P:TraceabilityHandler.OperationDetails.Details">
+            <summary>
+            Tárolandó eredmények.
+            </summary>
+        </member>
+        <member name="T:TraceabilityHandler.UserState">
+            <summary>
+            User login eredménye
+            </summary>
+        </member>
+    </members>
+</doc>

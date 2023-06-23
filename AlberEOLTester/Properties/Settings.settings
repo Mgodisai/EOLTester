@@ -1,0 +1,61 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AlberEOL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestNumber" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="IniFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Settings.ini</Value>
+    </Setting>
+    <Setting Name="TraceBaseURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://192.168.100.1/VUTS/web/api/</Value>
+    </Setting>
+    <Setting Name="LastProductTypeID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ErrorParameterName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ErrorCode</Value>
+    </Setting>
+    <Setting Name="NormalColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">SlateGray</Value>
+    </Setting>
+    <Setting Name="ErrorColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">IndianRed</Value>
+    </Setting>
+    <Setting Name="SuccessColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LimeGreen</Value>
+    </Setting>
+    <Setting Name="WarningColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Orange</Value>
+    </Setting>
+    <Setting Name="DisabledButtonColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">DarkSlateGray</Value>
+    </Setting>
+    <Setting Name="EnabledButtonColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">MediumSlateBlue</Value>
+    </Setting>
+    <Setting Name="PCBDateMin" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">2208220001</Value>
+    </Setting>
+    <Setting Name="LabelOKPrn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VGV24_Pack_Label_ES1_SAMPLE.prn</Value>
+    </Setting>
+    <Setting Name="LabelNOKPrn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VGV24_Pack_Label_EOL_NOK.prn</Value>
+    </Setting>
+    <Setting Name="AdminUserIdList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;1&lt;/string&gt;
+  &lt;string&gt;5&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SNPattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^(?&lt;year&gt;\d\d)(?&lt;month&gt;0[1-9]|1[012])(?&lt;day&gt;0[1-9]|[12][0-9]|3[01])(?&lt;sn&gt;\d{4})$</Value>
+    </Setting>
+    <Setting Name="EOLOpTraceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EndOfLineTest</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
